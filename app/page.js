@@ -4,17 +4,21 @@ import LandingNav from "@/components/landing nav";
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 text-gray-500">
+    <div className="bg-gray-200 text-gray-500">
+
       <LandingNav />
 
-      <div className="p-5">
-        <div className="mt-10">
-          <h1 className="text-2xl font-bold text-blue-950">Turn Your Facebook Shop Into a Real Bussiness</h1>
-          <h3 className="text-sm text-gray-600">Track orders, customers, delivery and sales — সব এক জায়গায় এক সহজ ড্যাশবোর্ডে।</h3>
-          <div className="w-full mt-3 flex items-center justify-center">
-            <button className="mt-2 px-5 py-2 text-white bg-green-500 hover:bg-green-700 shadow-2xl hover:shadow hover:shadow-amber-500 rounded-4xl">Get started</button>
+      <div className="" style={{ backgroundImage: `url(https://res.cloudinary.com/doit4flte/image/upload/v1778696487/security-cyber-digital-concept-abstract-technology-background_42421-211_eweed9.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div className="p-5">
+          <h1 className="text-2xl mt-10 mb-2 font-bold text-gray-200">Turn Your Facebook Shop Into a Real Bussiness</h1>
+          <h3 className="text-sm text-gray-300">Track orders, customers, delivery and sales — সব এক জায়গায় এক সহজ ড্যাশবোর্ডে।</h3>
+          <div className="w-full mt-5 mb-3 flex items-center justify-center">
+            <button className="mt-2 px-5 py-2 border-0 outline-0 text-white bg-green-500 hover:bg-green-600 shadow-2xl hover:shadow hover:shadow-amber-500 rounded-4xl">Get started</button>
           </div>
         </div>
+      </div>
+
+      <div className="p-5">
 
         <div className="mt-10 w-full rounded-2xl bg-white p-3">
           <div>
@@ -48,8 +52,8 @@ export default function Home() {
         <div className="mt-10">
           <h2 className="text-2xl font-bold text-gray-800">Start Organizing Your Facebook Business Today</h2>
           <div className="flex items-center justify-around">
-            <button className="mt-2 px-5 py-2 text-white bg-blue-600 hover:bg-blue-700 shadow-2xl hover:shadow hover:shadow-amber-500 rounded-4xl">Get started</button>
-            <button className="mt-2 px-9 py-2 text-white bg-blue-600 hover:bg-blue-700 shadow-2xl hover:shadow hover:shadow-amber-500 rounded-4xl">Sign up</button>
+            <button className="mt-2 px-5 py-2 border-0 outline-0 text-white bg-blue-600 hover:bg-blue-700 shadow-2xl hover:shadow hover:shadow-amber-500 rounded-4xl">Get started</button>
+            <button className="mt-2 px-9 py-2 border-0 outline-0 text-white bg-blue-600 hover:bg-blue-700 shadow-2xl hover:shadow hover:shadow-amber-500 rounded-4xl">Sign up</button>
           </div>
         </div>
 
