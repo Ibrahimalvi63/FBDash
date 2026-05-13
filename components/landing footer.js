@@ -1,7 +1,7 @@
 export default function LandingFooter() {
     return (
         <div>
-            <div className="w-full text-gray-400 px-3 py-5 bg-blue-900 flex items-start justify-between">
+            <div className="w-full text-gray-300 px-3 py-5 bg-blue-900 flex items-start justify-between">
                 <div className="">
                     <h1 className="text-xl font-bold">FBDash</h1>
                     <h2 className="text-sm">Smart solution for you</h2>
