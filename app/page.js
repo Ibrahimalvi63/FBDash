@@ -9,7 +9,7 @@ export default function Home() {
 
       <div className="p-5">
         <div className="mt-10">
-          <h1 className="text-2xl font-bold text-gray-900">Turn Your Facebook Shop Into a Real Bussiness</h1>
+          <h1 className="text-2xl font-bold text-blue-950">Turn Your Facebook Shop Into a Real Bussiness</h1>
           <h3 className="text-sm text-gray-600">Track orders, customers, delivery and sales — সব এক জায়গায় এক সহজ ড্যাশবোর্ডে।</h3>
           <div className="w-full mt-3 flex items-center justify-center">
             <button className="mt-2 px-5 py-2 text-white bg-green-500 hover:bg-green-700 shadow-2xl hover:shadow hover:shadow-amber-500 rounded-4xl">Get started</button>
@@ -55,7 +55,7 @@ export default function Home() {
 
         <div className="mt-10 w-full rounded-2xl bg-white p-3">
           <h2 className="text-xl font-bold text-gray-700">How it works</h2>
-          <ol className="px-5 py-3">
+          <ol className="px-5 py-2">
             <li className="list-decimal">Sign Up</li>
             <li className="list-decimal">Add Orders</li>
             <li className="list-decimal">Manage Everything Easily</li>
