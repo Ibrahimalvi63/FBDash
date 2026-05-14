@@ -9,7 +9,7 @@ export default function LandingFooter() {
                 <div className="">
                     <h3 className="text-xl font-bold">Any problem</h3>
                     <p className="text-sm"><b>Phone: </b> 01944-223552</p>
-                    <p className="text-sm"><b>Email: </b> ibrahimalvi@gmail.com</p>
+                    <p className="text-sm"><b>Email: </b> ibrahimalvi63@gmail.com</p>
                 </div>
             </div>
 

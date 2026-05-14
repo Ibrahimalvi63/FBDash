@@ -22,7 +22,7 @@ export default function NavBar() {
             <ul className={`flex items-center justify-around md:gap-10`}>
                 <li className="flex-1 active:bg-green-500/40 text-center p-4 text-2xl"><Link href={'/dashboard'}>📱</Link></li>
                 <li className="flex-1 active:bg-green-500/40 text-center p-4 text-xl"><Link href={'/dashboard/orders'}>📦</Link></li>
-                <li className="flex-1 active:bg-green-500/40 text-center p-4 text-xl"><Link href={'/dashboard/customer'}>👤</Link></li>
+                <li className="flex-1 active:bg-green-500/40 text-center p-4 text-xl"><Link href={'/dashboard/customers'}>👤</Link></li>
                 <li onClick={handleDisplay} className="flex-1 active:bg-green-500/40 text-center p-4 text-2xl relative md:hidden">⌘</li>
             </ul>
 

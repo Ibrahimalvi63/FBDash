@@ -11,8 +11,8 @@ export default function NotFound() {
                 <p className="mt-15 text-center font-bold text-2xl text-gray-800">Page not found</p>
                 <p className="text-gray-900">The page you are looking for doesn't exist or has been removed</p>
                 <div className="flex items-center justify-around mt-5 mb-2">
-                    <Link href={'/'}>
-                        <button className="px-5 py-1 text-white rounded-4xl shadow hover:shadow-amber-400 bg-green-500 hover:bg-green-600">Go home</button>
+                    <Link href={'/dashboard'}>
+                        <button className="px-5 py-1 text-white rounded-4xl shadow hover:shadow-amber-400 bg-green-500 hover:bg-green-600">Go dashboard</button>
                     </Link>
                     <button onClick={() => window.history.back()} className="px-5 py-1 text-white rounded-4xl shadow hover:shadow-amber-400 bg-green-500 hover:bg-green-600">Go back</button>
                 </div>

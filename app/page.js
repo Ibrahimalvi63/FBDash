@@ -1,5 +1,7 @@
 import LandingFooter from "@/components/landing footer";
 import LandingNav from "@/components/landing nav";
+import LogInBtn from "@/components/login-btn";
+import SignUpBtn from "@/components/signup-btn";
 
 
 export default function Home() {
@@ -13,7 +15,7 @@ export default function Home() {
           <h1 className="text-2xl mt-10 mb-2 font-bold text-gray-200">Turn Your Facebook Shop Into a Real Bussiness</h1>
           <h3 className="text-sm text-gray-300">Track orders, customers, delivery and sales — সব এক জায়গায় এক সহজ ড্যাশবোর্ডে।</h3>
           <div className="w-full mt-5 mb-3 flex items-center justify-center">
-            <button className="mt-2 px-5 py-2 border-0 outline-0 text-white bg-green-500 hover:bg-green-600 shadow-2xl hover:shadow hover:shadow-amber-500 rounded-4xl">Get started</button>
+            <LogInBtn />
           </div>
         </div>
       </div>
@@ -52,8 +54,8 @@ export default function Home() {
         <div className="mt-10">
           <h2 className="text-2xl font-bold text-gray-800">Start Organizing Your Facebook Business Today</h2>
           <div className="flex items-center justify-around">
-            <button className="mt-2 px-5 py-2 border-0 outline-0 text-white bg-blue-600 hover:bg-blue-700 shadow-2xl hover:shadow hover:shadow-amber-500 rounded-4xl">Get started</button>
-            <button className="mt-2 px-9 py-2 border-0 outline-0 text-white bg-blue-600 hover:bg-blue-700 shadow-2xl hover:shadow hover:shadow-amber-500 rounded-4xl">Sign up</button>
+            <LogInBtn />
+            <SignUpBtn />
           </div>
         </div>
 
