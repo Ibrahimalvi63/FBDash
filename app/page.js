@@ -18,7 +18,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="p-5">
+      <div className="p-5 min-h-screen">
 
         <div className="mt-10 w-full rounded-2xl bg-white p-3">
           <div>
