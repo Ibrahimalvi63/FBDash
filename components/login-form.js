@@ -16,15 +16,16 @@ export default function LoginForm() {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password })
             })
+
             const data = await res.json();
             if (!res.ok) {
                 alert(data.message);
                 return
             }
-
-            localStorage.setItem("token", data.token);
             alert("Login successful");
-            window.location.href = "/dashboard"
+            window.location.href = "/dashboard";
+
+
         } catch (err) {
             alert("Something went wrong");
             console.error(err)

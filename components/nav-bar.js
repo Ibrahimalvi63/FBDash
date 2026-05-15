@@ -13,8 +13,9 @@ export default function NavBar() {
         setDisplay(display == 'hidden' ? 'block' : 'hidden')
     }
 
-    const handleLogOut = () => {
-        router.push('/')
+    const handleLogOut = async () => {
+        const data = await fetch("/api/logout", { method: "POST" })
+        window.location.href = "/login"
     }
     return (
         <div className="bg-violet-800 absolute bottom-0 w-full md:flex md:justify-center z-50">

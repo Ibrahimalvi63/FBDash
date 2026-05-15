@@ -2,11 +2,14 @@ import dbConnect from "@/lib/mongodb";
 import User from "@/models/User";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import { cookies } from "next/headers";
 
 export async function POST(req) {
     try {
         await dbConnect();
-        const { email, password } = req.json();
+
+        const cookieStore = await cookies();
+        const { email, password } = await req.json();
 
         if (!email || !password) {
             return Response.json({ message: "All fields are required" }, { status: 400 })
@@ -28,10 +31,17 @@ export async function POST(req) {
             { expiresIn: "7d" }
         )
 
+        cookieStore.set("token", token, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === "production",
+            sameSite: "strict",
+            path: "/",
+            maxAge: 60 * 60 * 24 * 7
+        })
+
         return Response.json(
             {
                 message: "Login successful",
-                token,
                 user: {
                     id: user._id,
                     name: user.name,

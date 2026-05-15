@@ -1,4 +1,7 @@
-export default function SignUpPage() {
+
+
+export default function DashboardPage() {
+
     return (
         <div>
 
