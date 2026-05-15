@@ -1,4 +1,4 @@
-import ContactForm from "@/components/contact-form";
+import SignupForm from "@/components/signup-form";
 import LandingFooter from "@/components/landing footer";
 import LandingNav from "@/components/landing nav";
 
@@ -15,8 +15,8 @@ export default function SignUpPage() {
                     </div>
                 </div>
 
-                <div className="p-5 mt-15">
-                    <ContactForm />
+                <div className="p-5 mt-15 w-full flex justify-center items-center">
+                    <SignupForm />
                 </div>
             </div>
 
