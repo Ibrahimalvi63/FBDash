@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
+import toast from "react-hot-toast";
 
 export default function SignupForm() {
     const [name, setName] = useState("");
@@ -13,7 +14,7 @@ export default function SignupForm() {
         e.preventDefault();
 
         if (password !== confirmPassword) {
-            alert("Password do not match");
+            toast.error("Password do not match")
             return
         }
 
@@ -26,15 +27,15 @@ export default function SignupForm() {
             });
             const data = await res.json();
             if (!res.ok) {
-                alert(data.message);
+                toast.error(data.message);
                 return
             }
 
-            alert("Account created successfully");
+            toast.success("Account created successfully");
             window.location.href = "/login";
 
         } catch (err) {
-            alert("Something went wrong")
+            toast.error("Something went wrong")
         }
     }
 

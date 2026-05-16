@@ -5,6 +5,7 @@ import Link from "next/link"
 import { useRouter } from "next/navigation";
 
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function NavBar() {
     const [display, setDisplay] = useState('hidden')
@@ -17,6 +18,7 @@ export default function NavBar() {
     const handleLogOut = async () => {
         const data = await fetch("/api/logout", { method: "POST" })
         router.push("/login");
+        toast.success("Thank you, Welcome back again")
     }
     return (
         <div className="bg-violet-800 fixed bottom-0 w-full md:flex md:justify-center md:gap-10 z-50">

@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
+import toast from "react-hot-toast";
 
 export default function LoginForm() {
     const [email, setEmail] = useState("");
@@ -19,15 +20,15 @@ export default function LoginForm() {
 
             const data = await res.json();
             if (!res.ok) {
-                alert(data.message);
+                toast.error(data.message)
                 return
             }
-            alert("Login successful");
+
+            toast.success("Login successful")
             window.location.href = "/dashboard";
 
-
         } catch (err) {
-            alert("Something went wrong");
+            toast.error("Something went wrong")
             console.error(err)
         }
     }
