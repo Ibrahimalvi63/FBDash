@@ -1,20 +1,46 @@
-
+import HeaderBar from "@/components/header-bar";
+import NavBar from "@/components/nav-bar";
+import {
+    LayoutDashboard,
+    Users,
+    Settings,
+    ShoppingCart,
+    BarChart3,
+    PieChart,
+    LineChart,
+    Bell,
+    Search,
+    LogOut,
+    Home,
+    FileText,
+    CreditCard,
+    Package,
+    MessageCircle,
+    HelpCircle,
+    Calendar,
+    DollarSign,
+    TrendingUp,
+    Eye,
+    Edit,
+    Trash,
+    Plus,
+} from "lucide-react";
 
 export default function DashboardPage() {
 
     return (
-        <div>
-
-            <div className="bg-gray-200 text-gray-600">
-                <div className="" style={{ backgroundImage: `url(https://res.cloudinary.com/doit4flte/image/upload/v1778697667/pngtree-stock-market-finance-business-economy-trend-graph-digital-technology-image_15664196_qkfvva.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }}>
-                    <div className="p-5">
-                        <h1 className="text-2xl mt-10 mb-2 font-bold text-gray-200">Dashboard</h1>
-                        <h3 className="text-sm text-gray-300">সব এক জায়গায় এক সহজ ড্যাশবোর্ডে।</h3>
-                    </div>
+        <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 min-h-screen">
+            {/*Page layout not editable*/}
+            <div className="text-white md:pl-30 pt-20">
+                <HeaderBar />
+                {/*Main content area*/}
+                <div className="p-5">
+                    {/*Page content goes there*/}
+                    <div>Dashboard Page content</div>
                 </div>
+
             </div>
-
-
+            <NavBar />
         </div>
     )
 }

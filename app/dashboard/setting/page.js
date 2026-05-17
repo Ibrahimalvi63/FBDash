@@ -1,14 +1,17 @@
 export default function SettingPage() {
     return (
-        <div>
-            <div className="bg-gray-200 text-gray-600">
-                <div className="" style={{ backgroundImage: `url(https://res.cloudinary.com/doit4flte/image/upload/v1778955424/images_3_rlbnmw.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }}>
-                    <div className="p-5">
-                        <h1 className="text-2xl mt-10 mb-2 font-bold text-gray-200">Setting</h1>
-                        <h3 className="text-sm text-gray-300">You can manage your bussiness by using FBDash</h3>
-                    </div>
+        <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 min-h-screen">
+            {/*Page layout not editable*/}
+            <div className="text-white md:pl-30 pt-20">
+                <HeaderBar />
+                {/*Main content area*/}
+                <div className="p-5">
+                    {/*Page content goes there*/}
+                    <div>Setting Page content</div>
                 </div>
+
             </div>
+            <NavBar />
         </div>
     )
 }
