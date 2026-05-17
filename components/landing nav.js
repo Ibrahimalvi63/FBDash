@@ -28,7 +28,7 @@ export default function LandingNav() {
                         <li className="border-b md:border-0 mb-2" onClick={handleMenu}><Link href={'/'}>Home</Link></li>
                         <li className="border-b md:border-0 mb-2" onClick={handleMenu}><Link href={'/pricing'}>Pricing</Link></li>
                         <li className="border-b md:border-0 mb-2" onClick={handleMenu}><Link href={'/signup'}>SignUp</Link></li>
-                        <li className="border-b md:border-0" onClick={handleMenu}><Link href={'/login'}>LogIn</Link></li>
+                        <li className="border-b md:border-0 mb-2" onClick={handleMenu}><Link href={'/login'}>LogIn</Link></li>
                     </ul>
                 </div>
             </div>

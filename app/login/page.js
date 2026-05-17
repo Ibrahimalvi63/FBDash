@@ -15,7 +15,7 @@ export default function LogInPage() {
                     </div>
                 </div>
 
-                <div className="p-5 mt-16 w-full flex justify-center items-center">
+                <div className="p-5 mt-32 w-full flex justify-center items-center">
                     <LoginForm />
                 </div>
             </div>
