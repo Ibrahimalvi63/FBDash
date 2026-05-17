@@ -33,8 +33,8 @@ export default function PricingPage() {
 
             <div className="text-gray-600">
                 <div className="h-50 md:h-100" style={{ backgroundImage: `url(https://res.cloudinary.com/doit4flte/image/upload/v1778953630/industry-industry-4-web-network_zc4iik.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }}>
-                    <div className="text-center mb-12">
-                        <h1 className="text-2xl font-bold text-white mt-15">
+                    <div className="px-5 py-10">
+                        <h1 className="text-2xl font-bold text-white">
                             Simple Pricing for Everyone
                         </h1>
 
