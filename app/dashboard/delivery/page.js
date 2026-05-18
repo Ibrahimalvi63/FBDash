@@ -1,3 +1,6 @@
+import HeaderBar from "@/components/header-bar";
+import NavBar from "@/components/nav-bar";
+
 export default function DeliveryPage() {
     return (
         <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 min-h-screen">
