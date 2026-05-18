@@ -29,9 +29,9 @@ import {
 export default function DashboardPage() {
 
     return (
-        <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 min-h-screen">
+        <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 min-h-screen w-full">
             {/*Page layout not editable*/}
-            <div className="text-white md:pl-45 pt-20">
+            <div className="text-white md:pl-45 pt-20 w-full">
                 <HeaderBar />
                 {/*Main content area*/}
                 <div className="p-5 h-300">
