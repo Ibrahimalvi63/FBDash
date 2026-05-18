@@ -20,8 +20,6 @@
 //     )
 // }
 
-
-
 import LandingFooter from "@/components/landing footer";
 import LandingNav from "@/components/landing nav";
 import Link from "next/link";
@@ -32,7 +30,14 @@ export default function PricingPage() {
             <LandingNav />
 
             <div className="text-gray-600">
-                <div className="h-50 md:h-100" style={{ backgroundImage: `url(https://res.cloudinary.com/doit4flte/image/upload/v1778953630/industry-industry-4-web-network_zc4iik.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }}>
+                <div
+                    className="h-50 md:h-100"
+                    style={{
+                        backgroundImage: `url(https://res.cloudinary.com/doit4flte/image/upload/v1778953630/industry-industry-4-web-network_zc4iik.jpg)`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                    }}
+                >
                     <div className="px-5 py-10">
                         <h1 className="text-2xl font-bold text-white">
                             Simple Pricing for Everyone
@@ -46,19 +51,12 @@ export default function PricingPage() {
             </div>
 
             <div className="min-h-screen bg-gray-50 px-5 py-16">
-
                 <div className="max-w-6xl mx-auto">
-
-
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
                         <div className="bg-white border border-gray-100 rounded-2xl shadow-sm p-6 hover:shadow-md transition">
-
                             <h2 className="text-xl font-bold text-gray-900">Basic</h2>
 
-                            <p className="text-3xl font-bold text-blue-600 mt-3">
-                                $0
-                            </p>
+                            <p className="text-3xl font-bold text-blue-600 mt-3">$0</p>
 
                             <p className="text-sm text-gray-500">Forever free</p>
 
@@ -69,7 +67,7 @@ export default function PricingPage() {
                             </ul>
 
                             <Link
-                                href="/signup"
+                                href="/login"
                                 className="mt-6 block text-center bg-gray-100 hover:bg-gray-200 py-2 rounded-lg"
                             >
                                 Get Started
@@ -77,16 +75,13 @@ export default function PricingPage() {
                         </div>
 
                         <div className="bg-white border-2 border-blue-600 rounded-2xl shadow-md p-6 relative">
-
                             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full">
                                 Most Popular
                             </div>
 
                             <h2 className="text-xl font-bold text-gray-900">Pro</h2>
 
-                            <p className="text-3xl font-bold text-blue-600 mt-3">
-                                $9
-                            </p>
+                            <p className="text-3xl font-bold text-blue-600 mt-3">$9</p>
 
                             <p className="text-sm text-gray-500">per month</p>
 
@@ -98,7 +93,7 @@ export default function PricingPage() {
                             </ul>
 
                             <Link
-                                href="/signup"
+                                href="/login"
                                 className="mt-6 block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg"
                             >
                                 Start Pro
@@ -106,12 +101,9 @@ export default function PricingPage() {
                         </div>
 
                         <div className="bg-white border border-gray-100 rounded-2xl shadow-sm p-6 hover:shadow-md transition">
-
                             <h2 className="text-xl font-bold text-gray-900">Business</h2>
 
-                            <p className="text-3xl font-bold text-blue-600 mt-3">
-                                $19
-                            </p>
+                            <p className="text-3xl font-bold text-blue-600 mt-3">$19</p>
 
                             <p className="text-sm text-gray-500">per month</p>
 
@@ -123,23 +115,19 @@ export default function PricingPage() {
                             </ul>
 
                             <Link
-                                href="/signup"
+                                href="/login"
                                 className="mt-6 block text-center bg-gray-100 hover:bg-gray-200 py-2 rounded-lg"
                             >
                                 Choose Plan
                             </Link>
                         </div>
-
                     </div>
 
                     <p className="text-center text-sm text-gray-500 mt-10">
                         You can upgrade or downgrade anytime
                     </p>
-
                 </div>
-
             </div>
-
 
             <LandingFooter />
         </div>
