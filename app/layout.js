@@ -17,13 +17,19 @@ export const metadata = {
   description: "Turn Your Facebook Shop Into a Real Bussiness.Track orders, customers, delivery and sales — সব এক জায়গায় এক সহজ ড্যাশবোর্ডে।",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+}
+
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col no-scrollbar">
         {children}
         <Toaster position="bottom-right" />
       </body>
