@@ -1,4 +1,6 @@
+import BusinessGrowth from "@/components/business-growth";
 import HeaderBar from "@/components/header-bar";
+import MonthlyOrders from "@/components/monthly-orders";
 import NavBar from "@/components/nav-bar";
 import OrderOverview from "@/components/order-overview";
 import OrderPie from "@/components/order-pie";
@@ -26,7 +28,13 @@ export default function DashboardPage() {
                         <OrderPie />
                     </div>
 
-                    {/*Sales & order chart*/}
+                    {/*Monthly orders & Business growth chart*/}
+                    <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-2 md:gap-4 mt-5 w-full">
+                        <MonthlyOrders />
+                        <BusinessGrowth />
+                    </div>
+
+                    {/*Recent order & Todays summary chart*/}
                     <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-2 md:gap-4 mt-5 w-full">
                         <RecentOrders />
                         <TodaysSummary />

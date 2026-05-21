@@ -10,8 +10,8 @@ export default function TopProduct() {
         { name: "Spy camera", image: "https://res.cloudinary.com/doit4flte/image/upload/v1756531851/student_justz5.avif", sales: 9500, revenue: 1200 },
     ]
     return (
-        <div className="w-full bg-white/10 hover:bg-white/20 shadow-2xl transition backdrop-blur-xl border border-gray-100/10 rounded p-2">
-            <div className="flex items-start justify-between  my-2">
+        <div className="w-full bg-white/10 hover:bg-white/20 shadow-2xl transition backdrop-blur-xl border border-gray-100/10 rounded px-2 py-1">
+            <div className="flex items-start justify-between  my-1">
                 <h2 className="text-lg md:text-xl font-bold">Top Product</h2>
                 <Link className="text-sm text-blue-400" href={'/dashboard/customers'}>View all</Link>
             </div>
@@ -23,7 +23,7 @@ export default function TopProduct() {
                     <p>Revenue</p>
                 </div>
                 {productData.map((product, i) => (
-                    <div key={i} className="grid grid-cols-[2fr_1fr_1fr] p-2 my-2 bg-blue-500/10 rounded">
+                    <div key={i} className="grid grid-cols-[2fr_1fr_1fr] items-center p-1.5 my-2 bg-white/5 rounded">
                         <div className="flex items-center gap-3">
                             <Image className="rounded-full" height={20} width={20} src={product.image} alt="image" />
                             <p>{product.name}</p>

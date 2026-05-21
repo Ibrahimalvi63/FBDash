@@ -30,7 +30,7 @@ export default function SalesChart() {
     return (
         <div className="w-full bg-white/10 hover:bg-white/20 shadow-2xl transition backdrop-blur-xl border border-gray-100/10 rounded p-2">
             <div className="flex items-start justify-between my-2">
-                <h2 className="text-lg md:text-xl font-bold">Sales overview</h2>
+                <h2 className="text-lg md:text-xl font-bold">Sales Overview</h2>
                 <select className="p-1 border border-gray-100/10 rounded">
                     <option>This week</option>
                     <option>This month</option>
