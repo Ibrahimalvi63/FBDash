@@ -25,7 +25,7 @@ export default function MonthlyOrders() {
                 <Link className="text-sm text-blue-400" href={'/dashboard/orders'}>View all</Link>
             </div>
 
-            <diV>
+            <div>
                 <ResponsiveContainer width="100%" height={250}>
                     <BarChart data={monthlyOrders}>
                         <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
@@ -35,7 +35,7 @@ export default function MonthlyOrders() {
                         <Bar dataKey="orders" fill="#3B82F6" radius={[8, 8, 0, 0]} />
                     </BarChart>
                 </ResponsiveContainer>
-            </diV>
+            </div>
         </div>
     )
 }
